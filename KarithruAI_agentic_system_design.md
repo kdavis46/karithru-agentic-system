@@ -1,6 +1,6 @@
 ## Purpose
 
-FulfillAI is an autonomous, governance-aware AI agent designed to orchestrate the complete hardware order fulfillment lifecycle. The system processes new orders from initial email receipt through fulfillment confirmation, eliminating manual intervention in routine order workflows while maintaining strict compliance and quality standards.
+KarithruAI is an autonomous, governance-aware AI agent designed to orchestrate the complete hardware order fulfillment lifecycle. The system processes new orders from initial email receipt through fulfillment confirmation, eliminating manual intervention in routine order workflows while maintaining strict compliance and quality standards.
 
 ## Business Problem Solved
 
@@ -11,11 +11,11 @@ Organizations managing hardware order fulfillment face significant operational c
 - **Scalability Constraints**: Fixed human capacity limits the volume of orders that can be processed concurrently, creating bottlenecks during demand peaks.
 - **Cost Structure**: Labor-intensive workflows drive operational costs while customer satisfaction suffers from delayed order confirmation.
 
-FulfillAI addresses these challenges by automating the entire order fulfillment pipeline with human-level accuracy and enterprise-grade governance.
+KarithruAI addresses these challenges by automating the entire order fulfillment pipeline with human-level accuracy and enterprise-grade governance.
 
 ## High-Level System Description
 
-FulfillAI operates as an orchestrated multi-stage agent system:
+KarithruAI operates as an orchestrated multi-stage agent system:
 
 1. **Order Ingestion**: The system monitors designated email inboxes, extracts hardware order requests, and structures unstructured order data into standardized, validated order entities.
 
@@ -31,7 +31,7 @@ The entire pipeline is designed to execute within a 5-minute service-level objec
 
 ## Autonomy Boundaries
 
-FulfillAI operates with clearly defined autonomy constraints:
+karithruAI operates with clearly defined autonomy constraints:
 
 **Autonomous Authority**:
 - Email monitoring, order extraction, and data normalization
@@ -61,20 +61,20 @@ FulfillAI operates with clearly defined autonomy constraints:
 
 ## Ownership and Accountability Model
 
-Clear ownership is essential for sustainable operation, rapid incident response, and accountable governance. The following assignments establish who is responsible for decisions, controls, and ongoing oversight of FulfillAI while preserving human authority over policy and high-risk actions.
+Clear ownership is essential for sustainable operation, rapid incident response, and accountable governance. The following assignments establish who is responsible for decisions, controls, and ongoing oversight of KarithruAI while preserving human authority over policy and high-risk actions.
 
 - **Operations**: Owns business rules, exception handling processes, order triage criteria, and runbooks for manual interventions. Responsible for day-to-day operational performance and for approving changes to deterministic rules that affect order flow.
 - **Security**: Owns access control, identity management, encryption and data protection standards, and incident response for security events. Responsible for approving service identities and for monitoring and responding to potential data leakage or compromise.
 - **Engineering**: Owns system availability, reliability, integration contracts, and deployment gating. Responsible for maintaining observability, implementing circuit breakers, and executing controlled rollouts and rollbacks for platform changes.
 - **Compliance / Risk**: Owns audit oversight, regulatory alignment, policy validation, and the review of exception trends for regulatory impact. Responsible for approving policy changes that alter compliance posture and for managing audit evidence requirements.
 
-FulfillAI does not self-govern policy: all policy, compliance, and irreversible decisions require documented human approval by the appropriate role. These ownership boundaries ensure human accountability, reduce operational drift, and enable clear escalation and audit trails.
+KarithruAI does not self-govern policy: all policy, compliance, and irreversible decisions require documented human approval by the appropriate role. These ownership boundaries ensure human accountability, reduce operational drift, and enable clear escalation and audit trails.
 
 
 **Classification**: Enterprise System Design | Non-Confidential\
 ## Input Processing & Continuous Monitoring
 
-FulfillAI maintains persistent connectivity to designated order inboxes, enabling real-time detection and processing of incoming hardware order requests. The input processing layer operates as a continuous, stateful service designed for reliability and data integrity.
+KarithruAI maintains persistent connectivity to designated order inboxes, enabling real-time detection and processing of incoming hardware order requests. The input processing layer operates as a continuous, stateful service designed for reliability and data integrity.
 
 **Real-Time Email Monitoring**
 
@@ -123,7 +123,7 @@ All input processing operations are logged with full fidelity, enabling complete
 
 ## Exception Handling & Escalation Strategy
 
-This section defines how FulfillAI contains risk and preserves continuity when exceptions occur. It categorizes exception types, specifies automated containment and notification actions, and defines human escalation paths aligned with SLA obligations.
+This section defines how KarithruAI contains risk and preserves continuity when exceptions occur. It categorizes exception types, specifies automated containment and notification actions, and defines human escalation paths aligned with SLA obligations.
 
 - **Scope**: invalid customer credentials, inventory shortages, incomplete or corrupted PDFs, Salesforce API failures, and conflicting data between systems.
 
@@ -177,7 +177,7 @@ Escalation payloads include: complete order record, original attachments, extrac
 
 ## Output Generation & Action Tools
 
-FulfillAI produces explicit, auditable outputs and action signals to complete the fulfillment lifecycle while preserving traceability and enabling reversal where required.
+KarithruAI produces explicit, auditable outputs and action signals to complete the fulfillment lifecycle while preserving traceability and enabling reversal where required.
 
 - **Customer Confirmation Emails**
 	- Content includes order summary, expected delivery timeline, tracking references, and any exceptions or special instructions.
@@ -211,7 +211,7 @@ FulfillAI produces explicit, auditable outputs and action signals to complete th
 
 ## Future Enhancements & Strategic Roadmap
 
-This roadmap outlines a phased, low-risk evolution of FulfillAI capabilities intended to increase automation value while preserving control and operational stability.
+This roadmap outlines a phased, low-risk evolution of KarithruAI capabilities intended to increase automation value while preserving control and operational stability.
 
 Phase 1 — Reliability and Scale (near-term)
 - Predictive inventory planning (pilot): integrate historical consumption and order forecasts to recommend safety-stock adjustments for critical SKUs; start with a small SKU cohort and validate forecasts against actuals.
@@ -358,17 +358,17 @@ This section defines the core performance indicators and monitoring views used t
 
 ## System Assumptions
 
-FulfillAI is designed and operated under a limited set of foundational assumptions to prevent scope creep and support predictable outcomes. The system assumes email is the authoritative intake channel for hardware orders and that submitted PDF documents adhere to reasonably consistent, machine‑readable formats to enable reliable extraction and validation. It further assumes Salesforce is the canonical system of record for customer identity and account status, and that inventory systems provide near‑real‑time availability data suitable for automated routing decisions.
+KarithruAI is designed and operated under a limited set of foundational assumptions to prevent scope creep and support predictable outcomes. The system assumes email is the authoritative intake channel for hardware orders and that submitted PDF documents adhere to reasonably consistent, machine‑readable formats to enable reliable extraction and validation. It further assumes Salesforce is the canonical system of record for customer identity and account status, and that inventory systems provide near‑real‑time availability data suitable for automated routing decisions.
 
-Operations assume FulfillAI will run within existing contractual SLAs and operational practices; when one or more of the assumptions above do not hold, orders will be handled through defined exception and human‑in‑the‑loop processes. These statements are constraints for scope and governance and are not implementation requirements or feature descriptions.
+Operations assume KarithruAI will run within existing contractual SLAs and operational practices; when one or more of the assumptions above do not hold, orders will be handled through defined exception and human‑in‑the‑loop processes. These statements are constraints for scope and governance and are not implementation requirements or feature descriptions.
 
 ## Non-Goals and Out-of-Scope Capabilities
 
 Documenting non-goals clarifies operational boundaries, reduces ambiguity, and ensures governance oversight remains central to system behavior.
 
-- Pricing negotiation or modification: FulfillAI does not negotiate, change, or approve pricing terms with customers or partners.
+- Pricing negotiation or modification: KarithruAI does not negotiate, change, or approve pricing terms with customers or partners.
 - Credit approval or extension decisions: The system does not make credit, financing, or credit-limit extension decisions; such steps require established credit controls and human approval.
-- Contractual or legal review: FulfillAI does not perform contract interpretation, legal review, or binding contractual commitments.
+- Contractual or legal review: KarithruAI does not perform contract interpretation, legal review, or binding contractual commitments.
 - Autonomous execution of irreversible financial transactions: The system does not initiate irreversible billing, refunds, or payment captures without explicit human authorization.
 - Policy overrides without human authorization: FulfillAI will not bypass or override documented policies, compliance checks, or regulatory controls without documented human sign-off.
 
