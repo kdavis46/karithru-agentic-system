@@ -31,7 +31,7 @@ The entire pipeline is designed to execute within a 5-minute service-level objec
 
 ## Autonomy Boundaries
 
-karithruAI operates with clearly defined autonomy constraints:
+KarithruAI operates with clearly defined autonomy constraints:
 
 **Autonomous Authority**:
 - Email monitoring, order extraction, and data normalization
@@ -293,7 +293,7 @@ This section lists key technical and business risks, their realistic impact and 
 
 ## Performance Metrics, KPIs, and Monitoring Dashboard
 
-This section defines the core performance indicators and monitoring views used to validate FulfillAI against business objectives, support operational decision-making, and detect regressions early.
+This section defines the core performance indicators and monitoring views used to validate KarithruAI against business objectives, support operational decision-making, and detect regressions early.
 
 ### Core KPIs (aligned to success criteria)
 
@@ -370,6 +370,6 @@ Documenting non-goals clarifies operational boundaries, reduces ambiguity, and e
 - Credit approval or extension decisions: The system does not make credit, financing, or credit-limit extension decisions; such steps require established credit controls and human approval.
 - Contractual or legal review: KarithruAI does not perform contract interpretation, legal review, or binding contractual commitments.
 - Autonomous execution of irreversible financial transactions: The system does not initiate irreversible billing, refunds, or payment captures without explicit human authorization.
-- Policy overrides without human authorization: FulfillAI will not bypass or override documented policies, compliance checks, or regulatory controls without documented human sign-off.
+- Policy overrides without human authorization: KarithruAI will not bypass or override documented policies, compliance checks, or regulatory controls without documented human sign-off.
 
 These non-goals reflect an explicit stance of operational restraint and governance; they are deliberate boundaries to prevent unauthorized scope expansion and ensure human accountability for legal, financial, and policy-sensitive actions.
