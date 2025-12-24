@@ -1,6 +1,7 @@
-# FulfillAI — Agentic Order Fulfillment System
+# KarithruAI
+ — Agentic Order Fulfillment System
 
-FulfillAI is an autonomous, governance-aware AI system designed to automate the end-to-end hardware order fulfillment lifecycle. The system processes incoming customer orders from email receipt through fulfillment confirmation, while enforcing strict validation, auditability, and human-in-the-loop escalation controls.
+KarithruAI is a deterministic, agentic execution system designed to carry operational workflows from input to outcome with human-in-the-loop governance.
 
 This project demonstrates **spec-driven development**, deterministic decision logic, and enterprise-grade operational design principles rather than model-centric experimentation.
 
@@ -15,7 +16,7 @@ Manual hardware order processing introduces significant operational risk and ine
 - Fixed staffing capacity creates bottlenecks during demand spikes
 - High labor costs reduce operational margins and customer satisfaction
 
-FulfillAI addresses these issues by automating routine workflows while preserving human oversight for high-risk and non-standard cases.
+KarithruAI addresses these issues by automating routine workflows while preserving human oversight for high-risk and non-standard cases.
 
 ---
 
@@ -30,7 +31,7 @@ FulfillAI addresses these issues by automating routine workflows while preservin
 
 ## Architecture Overview
 
-FulfillAI is implemented as a deterministic agent orchestrator with clear separation of concerns:
+KarithruAI is implemented as a deterministic agent orchestrator with clear separation of concerns:
 
 
 Input Processing → Decision Engine → Action Execution → Audit Logging
@@ -75,13 +76,13 @@ Input Processing → Decision Engine → Action Execution → Audit Logging
 - Inventory shortages requiring sourcing decisions
 - Ambiguous or anomalous orders
 
-FulfillAI does **not** override policy, compliance, or irreversible actions without explicit human approval.
+KarithruAI does **not** override policy, compliance, or irreversible actions without explicit human approval.
 
 ---
 
 ## Project Structure
 
-FulfillAI/
+KarithruAI/
 ├── app.py
 ├── models.py
 ├── decision_engine.py
